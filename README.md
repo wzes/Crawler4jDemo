@@ -53,7 +53,7 @@ public static void main(String[] args) throws Exception {
     }　　
 `
 ```
-- 新建一个类实现自己的抓取逻辑  
+- 新建一个类继承WebConCrawler实现自己的抓取逻辑 ***需要重写shouldVisit和visit两个方法，分别控制uri的范围和抓取内容*** 
 ```
     public class MyCrawler extends WebCrawler {
 
