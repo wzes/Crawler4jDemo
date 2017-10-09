@@ -3,16 +3,15 @@
 ## 使用方法
 - 新建一个maven(gradle...)工程
 - 在pom.xml中添加依赖   
-`
+```
     <dependency>
         <groupId>edu.uci.ics</groupId>
         <artifactId>crawler4j</artifactId>
         <version>4.3</version>
     </dependency>
-`
-
+```
 - 开始编码　　
-`
+```
 public static void main(String[] args) throws Exception {
         String crawlStorageFolder = "/home/xuantang/IdeaProjects/Crawler4jDemo/data";
         int numberOfCrawlers = 7;
@@ -53,8 +52,9 @@ public static void main(String[] args) throws Exception {
         controller.start(MyCrawler.class, numberOfCrawlers);
     }　　
 `
+```
 - 新建一个类实现自己的抓取逻辑  
-`
+```
     public class MyCrawler extends WebCrawler {
 
     private static int count = 0;
@@ -98,4 +98,4 @@ public static void main(String[] args) throws Exception {
         }
     }
 }
-`
+```
